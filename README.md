@@ -10,22 +10,29 @@ The app runs as a Bun + Hono server with server-rendered HTML, HTMX partial upda
 
 ## Install
 
+Use Bun **1.3.14**, pinned in `package.json`, with the committed `bun.lock`.
+
 ```bash
 git clone https://github.com/tsilva/claudesk.git
 cd claudesk
-bun install
+bun install --frozen-lockfile
 bun run dev
 ```
 
 Open [http://localhost:3456](http://localhost:3456). On first run, maestro asks for the directory that contains your git repositories.
+
+`bunfig.toml` sets a seven-day minimum release age for newly resolved dependency versions. Keep `bun.lock` committed when intentionally updating dependencies.
 
 ## Commands
 
 ```bash
 bun run dev                    # start the dev server with file watching
 bun run start                  # start the server without file watching
+bunx --no-install tsc --noEmit  # type-check using the installed compiler
 bun bin/claudesk.mjs --no-open # run the CLI entry without opening a browser
 ```
+
+The CI workflow runs on branch pushes, pull requests, and merge queue checks. It uses Bun 1.3.14, installs from the frozen lockfile with lifecycle scripts disabled, and runs the TypeScript check above. Dependency review runs separately.
 
 ## Notes
 
