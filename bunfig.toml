@@ -1,0 +1,3 @@
+[install]
+# Seven days in seconds, matching the npm/pnpm age protections in .npmrc.
+minimumReleaseAge = 604800
