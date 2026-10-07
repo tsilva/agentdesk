@@ -1,8 +1,12 @@
-<div align="center">
+<p align="center">
   <img src="https://raw.githubusercontent.com/tsilva/claudesk/main/logo.png" alt="maestro" width="512" />
+  <br />
+  <!-- repo-tagline:start -->
+  <strong>🖥️ Interactive dashboard for launching and managing OpenCode agents ⚡</strong>
+  <!-- repo-tagline:end -->
+</p>
 
-  🖥️ **Interactive dashboard for launching and managing OpenCode agents** ⚡
-</div>
+🖥️ **Interactive dashboard for launching and managing OpenCode agents** ⚡
 
 maestro is a local web dashboard for running OpenCode agents across your git repositories. It gives you one browser tab for creating sessions, sending follow-up prompts, approving tool permissions, watching live output, and tracking token and cost totals.
 
