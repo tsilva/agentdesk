@@ -1,5 +1,5 @@
 ---
-name: typecheck
+name: claudesk_typecheck
 description: Use when TypeScript errors may have been introduced, after editing .ts files, or when debugging unexpected runtime behavior that could be a type mismatch.
 ---
 

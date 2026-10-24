@@ -1,5 +1,5 @@
 ---
-name: manual-test
+name: claudesk_manual-test
 description: Use when verifying claudesk after changes to ensure core functionality works end-to-end before committing.
 disable-model-invocation: true
 ---
