@@ -25,7 +25,7 @@ bun run dev
 
 Open [http://localhost:3456](http://localhost:3456). On first run, maestro asks for the directory that contains your git repositories.
 
-`bunfig.toml` sets a seven-day minimum release age for newly resolved dependency versions. Keep `bun.lock` committed when intentionally updating dependencies.
+`bunfig.toml` sets a seven-day minimum release age for newly resolved dependency versions and disables install lifecycle scripts for the project and all dependencies. `.npmrc` also disables lifecycle scripts and retains the npm/pnpm release-age settings and pnpm exotic-subdependency blocking. No age or lifecycle-script exceptions are required; document any future justified exceptions with reasons in `.repoman.json`. Keep `bun.lock` committed when intentionally updating dependencies.
 
 ## Commands
 
