@@ -51,3 +51,5 @@ logs/
 .claudesk/
 .maestro/
 .worktrees/
+/INBOX.md
+/.local/repo-inbox/
